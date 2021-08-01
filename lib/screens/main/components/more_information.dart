@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_profile/logic/openInNewTab.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../constants.dart';
@@ -40,19 +41,28 @@ class MoreInformation extends StatelessWidget {
             children: [
               Spacer(),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  openInANewTab(
+                      "https://www.linkedin.com/in/justin-baumann-4066161b8/",
+                      "LinkedIn");
+                },
                 icon: SvgPicture.asset(
                   "assets/icons/linkedin.svg",
                 ),
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  openInANewTab("https://github.com/jxstxn1", "GitHub");
+                },
                 icon: SvgPicture.asset(
                   "assets/icons/github.svg",
                 ),
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  openInANewTab(
+                      "https://www.instagram.com/jxstxn.__/", "Instagram");
+                },
                 icon: SvgPicture.asset(
                   "assets/icons/instagram.svg",
                 ),
