@@ -15,80 +15,86 @@ class HighLightBar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: defaultPadding),
       child: Responsive.isMobileLarge(context)
-          ? Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    HighLight(
-                      counter: AnimatedCounter(
-                        value: 16,
-                        text: "+",
+          ? Padding(
+              padding: const EdgeInsets.only(right: defaultPadding / 2),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      HighLight(
+                        counter: AnimatedCounter(
+                          value: 16,
+                          text: "+",
+                        ),
+                        label: "Github Projects",
                       ),
-                      label: "Github Projects",
-                    ),
-                    HighLight(
-                      counter: AnimatedCounter(
-                        value: 3,
-                        text: "+",
+                      HighLight(
+                        counter: AnimatedCounter(
+                          value: 3,
+                          text: "+",
+                        ),
+                        label: "Years Experience",
                       ),
-                      label: "Years Experience",
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    HighLight(
-                      counter: AnimatedCounter(
-                        value: 15,
-                        text: "+",
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      HighLight(
+                        counter: AnimatedCounter(
+                          value: 15,
+                          text: "+",
+                        ),
+                        label: "Stars",
                       ),
-                      label: "Stars",
-                    ),
-                    HighLight(
-                      counter: AnimatedCounter(
-                        value: 8,
-                        text: "+",
+                      HighLight(
+                        counter: AnimatedCounter(
+                          value: 8,
+                          text: "+",
+                        ),
+                        label: "Cooperations",
                       ),
-                      label: "Cooperations",
-                    ),
-                  ],
-                )
-              ],
+                    ],
+                  )
+                ],
+              ),
             )
-          : Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                HighLight(
-                  counter: AnimatedCounter(
-                    value: 16,
-                    text: "+",
+          : Padding(
+              padding: const EdgeInsets.only(right: defaultPadding / 2),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  HighLight(
+                    counter: AnimatedCounter(
+                      value: 16,
+                      text: "+",
+                    ),
+                    label: "Github Projects",
                   ),
-                  label: "Github Projects",
-                ),
-                HighLight(
-                  counter: AnimatedCounter(
-                    value: 3,
-                    text: "+",
+                  HighLight(
+                    counter: AnimatedCounter(
+                      value: 3,
+                      text: "+",
+                    ),
+                    label: "Years Experience",
                   ),
-                  label: "Years Experience",
-                ),
-                HighLight(
-                  counter: AnimatedCounter(
-                    value: 15,
-                    text: "+",
+                  HighLight(
+                    counter: AnimatedCounter(
+                      value: 15,
+                      text: "+",
+                    ),
+                    label: "Stars",
                   ),
-                  label: "Stars",
-                ),
-                HighLight(
-                  counter: AnimatedCounter(
-                    value: 8,
-                    text: "+",
+                  HighLight(
+                    counter: AnimatedCounter(
+                      value: 8,
+                      text: "+",
+                    ),
+                    label: "Cooperations",
                   ),
-                  label: "Cooperations",
-                ),
-              ],
+                ],
+              ),
             ),
     );
   }
