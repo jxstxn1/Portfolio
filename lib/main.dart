@@ -4,6 +4,7 @@ import 'package:flutter_profile/screens/main/main_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'constants.dart';
+import 'custom_scroll_behavior.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,6 +28,12 @@ class MyApp extends StatelessWidget {
               bodyText2: TextStyle(color: bodyTextColor),
             ),
       ),
+      builder: (context, child) {
+        return ScrollConfiguration(
+          behavior: NoGlowBehavior(),
+          child: child!,
+        );
+      },
       home: HomeScreen(),
     );
   }
