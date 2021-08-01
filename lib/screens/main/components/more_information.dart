@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_profile/logic/download_cv.dart';
 import 'package:flutter_profile/logic/openInNewTab.dart';
 import 'package:flutter_profile/screens/impressum/impressum.dart';
 import 'package:flutter_svg/svg.dart';
@@ -55,7 +56,9 @@ class MoreInformation extends StatelessWidget {
         ),
         SizedBox(height: defaultPadding / 2),
         TextButton(
-          onPressed: () {},
+          onPressed: () {
+            downloadCV();
+          },
           child: FittedBox(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,

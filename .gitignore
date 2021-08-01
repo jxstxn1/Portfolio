@@ -53,3 +53,4 @@ app.*.map.json
 firebase.json
 .firebase/
 public/
+lib/links.dart
