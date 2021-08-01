@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'area_info_text.dart';
+import '../../../components/info_text.dart';
 
 class AreaInfo extends StatelessWidget {
   const AreaInfo({
@@ -11,15 +11,15 @@ class AreaInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        AreaInfoText(
+        InfoText(
           title: "Residence",
           text: "Germany",
         ),
-        AreaInfoText(
+        InfoText(
           title: "Location",
           text: "Leutkirch",
         ),
-        AreaInfoText(
+        InfoText(
           title: "Age",
           text: "19",
         ),

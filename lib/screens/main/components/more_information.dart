@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/logic/openInNewTab.dart';
+import 'package:flutter_profile/screens/impressum/impressum.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../constants.dart';
@@ -69,6 +70,54 @@ class MoreInformation extends StatelessWidget {
               ),
               Spacer(),
             ],
+          ),
+        ),
+        SizedBox(height: defaultPadding / 2),
+        TextButton(
+          onPressed: () {},
+          child: FittedBox(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                SvgPicture.asset("assets/icons/download.svg"),
+                SizedBox(
+                  width: defaultPadding / 2,
+                ),
+                Text(
+                  "Download CV",
+                  style: TextStyle(
+                    color: Theme.of(context).textTheme.bodyText1!.color,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        SizedBox(height: defaultPadding / 2),
+        TextButton(
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (BuildContext context) => Impressum(),
+              ),
+            );
+          },
+          child: FittedBox(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                SvgPicture.asset("assets/icons/info.svg"),
+                SizedBox(
+                  width: defaultPadding / 2,
+                ),
+                Text(
+                  "Impressum     ",
+                  style: TextStyle(
+                    color: Theme.of(context).textTheme.bodyText1!.color,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ],
