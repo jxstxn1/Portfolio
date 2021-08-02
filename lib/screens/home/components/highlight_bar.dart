@@ -24,15 +24,17 @@ class HighLightBar extends StatelessWidget {
                     children: [
                       HighLight(
                         counter: AnimatedCounter(
-                          value: 16,
+                          percentage: 16,
                           text: "+",
+                          waitingTime: 800,
                         ),
                         label: "Github Projects",
                       ),
                       HighLight(
                         counter: AnimatedCounter(
-                          value: 3,
+                          percentage: 3,
                           text: "+",
+                          waitingTime: 1000,
                         ),
                         label: "Years Experience",
                       ),
@@ -43,15 +45,17 @@ class HighLightBar extends StatelessWidget {
                     children: [
                       HighLight(
                         counter: AnimatedCounter(
-                          value: 15,
+                          percentage: 15,
                           text: "+",
+                          waitingTime: 1200,
                         ),
                         label: "Stars",
                       ),
                       HighLight(
                         counter: AnimatedCounter(
-                          value: 8,
+                          percentage: 8,
                           text: "+",
+                          waitingTime: 1400,
                         ),
                         label: "Cooperations",
                       ),
@@ -67,29 +71,33 @@ class HighLightBar extends StatelessWidget {
                 children: [
                   HighLight(
                     counter: AnimatedCounter(
-                      value: 16,
+                      percentage: 16,
                       text: "+",
+                      waitingTime: 800,
                     ),
                     label: "Github Projects",
                   ),
                   HighLight(
                     counter: AnimatedCounter(
-                      value: 3,
+                      percentage: 3,
                       text: "+",
+                      waitingTime: 1000,
                     ),
                     label: "Years Experience",
                   ),
                   HighLight(
                     counter: AnimatedCounter(
-                      value: 15,
+                      percentage: 15,
                       text: "+",
+                      waitingTime: 1200,
                     ),
                     label: "Stars",
                   ),
                   HighLight(
                     counter: AnimatedCounter(
-                      value: 8,
+                      percentage: 8,
                       text: "+",
+                      waitingTime: 1400,
                     ),
                     label: "Cooperations",
                   ),

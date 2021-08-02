@@ -5,11 +5,13 @@ import '../constants.dart';
 class AnimatedCircularProgressIndicator extends StatefulWidget {
   const AnimatedCircularProgressIndicator({
     Key? key,
-    this.percent,
-    this.skill,
+    required this.percentage,
+    required this.skill,
+    required this.waitingTime,
   }) : super(key: key);
-  final double? percent;
+  final double? percentage;
   final String? skill;
+  final int? waitingTime;
 
   @override
   _AnimatedCircularProgressIndicatorState createState() =>
@@ -17,7 +19,39 @@ class AnimatedCircularProgressIndicator extends StatefulWidget {
 }
 
 class _AnimatedCircularProgressIndicatorState
-    extends State<AnimatedCircularProgressIndicator> {
+    extends State<AnimatedCircularProgressIndicator>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _animationController;
+  late Animation<double> animation;
+
+  @override
+  void initState() {
+    super.initState();
+    _animationController = AnimationController(
+      vsync: this,
+      duration: defaultDuration,
+    );
+    animation = Tween<double>(begin: 0, end: widget.percentage)
+        .animate(_animationController)
+          ..addListener(() {
+            setState(() {});
+          });
+    _playAnimation();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _animationController.dispose();
+  }
+
+  Future<void> _playAnimation() async {
+    try {
+      await Future.delayed(Duration(milliseconds: widget.waitingTime!));
+      await _animationController.forward();
+    } on TickerCanceled {}
+  }
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -25,25 +59,21 @@ class _AnimatedCircularProgressIndicatorState
         children: [
           AspectRatio(
             aspectRatio: 1,
-            child: TweenAnimationBuilder(
-              tween: Tween<double>(begin: 0.0, end: widget.percent!),
-              duration: defaultDuration,
-              builder: (context, double value, child) => Stack(
-                fit: StackFit.expand,
-                children: [
-                  CircularProgressIndicator(
-                    value: value,
-                    color: primaryColor,
-                    backgroundColor: darkColor,
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
+                CircularProgressIndicator(
+                  value: animation.value,
+                  color: primaryColor,
+                  backgroundColor: darkColor,
+                ),
+                Center(
+                  child: Text(
+                    (animation.value * 100).toInt().toString() + "%",
+                    style: Theme.of(context).textTheme.subtitle1,
                   ),
-                  Center(
-                    child: Text(
-                      (value * 100).toInt().toString() + "%",
-                      style: Theme.of(context).textTheme.subtitle1,
-                    ),
-                  )
-                ],
-              ),
+                )
+              ],
             ),
           ),
           SizedBox(height: defaultPadding / 2),

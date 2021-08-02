@@ -24,22 +24,25 @@ class Skills extends StatelessWidget {
         Row(
           children: [
             AnimatedCircularProgressIndicator(
-              percent: 0.78,
+              percentage: 0.78,
               skill: "Flutter",
+              waitingTime: 200,
             ),
             SizedBox(
               width: defaultPadding,
             ),
             AnimatedCircularProgressIndicator(
-              percent: 0.70,
+              percentage: 0.70,
               skill: "Github",
+              waitingTime: 400,
             ),
             SizedBox(
               width: defaultPadding,
             ),
             AnimatedCircularProgressIndicator(
-              percent: 0.55,
+              percentage: 0.55,
               skill: "Firebase",
+              waitingTime: 600,
             ),
           ],
         ),
