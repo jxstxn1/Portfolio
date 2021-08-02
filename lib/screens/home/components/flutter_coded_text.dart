@@ -5,7 +5,10 @@ import '../../../constants.dart';
 class FlutterCodedText extends StatelessWidget {
   const FlutterCodedText({
     Key? key,
+    this.last = false,
   }) : super(key: key);
+
+  final bool last;
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +17,7 @@ class FlutterCodedText extends StatelessWidget {
         text: "<",
         children: [
           TextSpan(
-            text: "/flutter",
+            text: last ? "/flutter" : "flutter",
             style: TextStyle(color: primaryColor),
           ),
           TextSpan(text: ">")

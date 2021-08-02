@@ -27,7 +27,10 @@ class IBuildAnimatedText extends StatelessWidget {
               : AnimatedTextPart(),
           if (!Responsive.isMobileLarge(context))
             SizedBox(width: defaultPadding / 2),
-          if (!Responsive.isMobileLarge(context)) FlutterCodedText(),
+          if (!Responsive.isMobileLarge(context))
+            FlutterCodedText(
+              last: true,
+            ),
         ],
       ),
     );
