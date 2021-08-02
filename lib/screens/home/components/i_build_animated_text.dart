@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../constants.dart';
 import '../../../responsive.dart';
 import 'animated_text_part.dart';
-import 'flutter_coded_text.dart';
+import '../../../components/flutter_coded_text.dart';
 
 class IBuildAnimatedText extends StatelessWidget {
   const IBuildAnimatedText({

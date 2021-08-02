@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/models/Project.dart';
 import 'package:flutter_profile/responsive.dart';
+import 'package:flutter_profile/screens/article/article.dart';
 
 import '../../../constants.dart';
 
@@ -36,7 +37,13 @@ class ProjectCard extends StatelessWidget {
           ),
           Spacer(),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: (BuildContext context) => Article(project: project),
+                ),
+              );
+            },
             child: Text(
               "Read more>>",
               style: TextStyle(color: primaryColor),

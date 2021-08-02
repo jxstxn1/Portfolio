@@ -26,7 +26,6 @@ class _AnimatedCircularProgressIndicatorState
 
   @override
   void initState() {
-    super.initState();
     _animationController = AnimationController(
       vsync: this,
       duration: defaultDuration,
@@ -37,12 +36,13 @@ class _AnimatedCircularProgressIndicatorState
             setState(() {});
           });
     _playAnimation();
+    super.initState();
   }
 
   @override
   void dispose() {
-    super.dispose();
     _animationController.dispose();
+    super.dispose();
   }
 
   Future<void> _playAnimation() async {

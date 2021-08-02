@@ -27,7 +27,6 @@ class _AnimatedLinearProgressIndicatorState
 
   @override
   void initState() {
-    super.initState();
     _animationController = AnimationController(
       vsync: this,
       duration: defaultDuration,
@@ -38,12 +37,13 @@ class _AnimatedLinearProgressIndicatorState
             setState(() {});
           });
     _playAnimation();
+    super.initState();
   }
 
   @override
   void dispose() {
-    super.dispose();
     _animationController.dispose();
+    super.dispose();
   }
 
   Future<void> _playAnimation() async {
