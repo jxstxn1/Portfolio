@@ -10,6 +10,9 @@ class Impressum extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: darkColor,
+      appBar: AppBar(
+        backgroundColor: darkColor,
+      ),
       body: SingleChildScrollView(
         child: Container(
           alignment: Alignment.center,
