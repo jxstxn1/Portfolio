@@ -7,7 +7,10 @@ import 'i_build_animated_text.dart';
 class HomeBanner extends StatelessWidget {
   const HomeBanner({
     Key? key,
+    required this.function,
   }) : super(key: key);
+
+  final Function function;
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +46,9 @@ class HomeBanner extends StatelessWidget {
                 SizedBox(height: defaultPadding),
                 if (!Responsive.isMobileLarge(context))
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      function();
+                    },
                     style: TextButton.styleFrom(
                         padding: EdgeInsets.symmetric(
                           horizontal: defaultPadding * 2,
