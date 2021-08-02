@@ -41,6 +41,12 @@ body {
     height: 20px;
     width: 500px;
   }
+
+  @media only screen and (max-width: 550px) {
+    .progress {
+      width: 285px;
+    }
+  }
   
   .progress-value {
     animation: load 3s normal forwards;
