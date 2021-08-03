@@ -11,16 +11,30 @@ class ImageRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
-        children: List.generate(
-          images!.length,
-          (index) => Padding(
-            padding: const EdgeInsets.only(right: defaultPadding),
-            child: ImageViewWithText(image: images![index]),
+    return Padding(
+      padding: const EdgeInsets.all(defaultPadding),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(height: defaultPadding),
+          Text(
+            "Images",
+            style: Theme.of(context).textTheme.headline6,
           ),
-        ),
+          SizedBox(height: defaultPadding / 2),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: List.generate(
+                images!.length,
+                (index) => Padding(
+                  padding: const EdgeInsets.only(right: defaultPadding),
+                  child: ImageViewWithText(image: images![index]),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

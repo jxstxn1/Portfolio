@@ -33,7 +33,29 @@ List<Project> demo_projects = [
     ],
     resume:
         "In the end the project was and is bigger than expected, but I learned so much during the main development process. I planned a complete rewrite of the app with all the stuff I learned in the past year",
-    images: [],
+    images: [
+      ImageData(
+        imageSource:
+            "assets/images/projects/kontra-app/accept_notifications.png",
+        description:
+            "This is the screen which shows up to ask the User for the notification permission",
+      ),
+      ImageData(
+        imageSource: "assets/images/projects/kontra-app/home_screen.png",
+        description:
+            "This is the Home Screen where the user can see all articles",
+      ),
+      ImageData(
+        imageSource: "assets/images/projects/kontra-app/search_screen.png",
+        description:
+            "This is the Search Screen where the user can search in all existing articles",
+      ),
+      ImageData(
+        imageSource: "assets/images/projects/kontra-app/article_screen.png",
+        description:
+            "This is the Article Screen where the user can read the article, like it and share it",
+      ),
+    ],
   ),
   Project(
     title: "Door Opener App",
@@ -52,7 +74,30 @@ List<Project> demo_projects = [
     ],
     resume:
         "In the End it was a very nice Project. We both learned so much about network communication and encryption. I learned a lot about User Friendly App Design",
-    images: [],
+    images: [
+      ImageData(
+        imageSource: "assets/images/projects/door-opener-app/no_update.png",
+        description:
+            "This is the Screen which shows up if there is no update available",
+      ),
+      ImageData(
+        imageSource:
+            "assets/images/projects/door-opener-app/update_available.png",
+        description:
+            "This is the Screen which shows up if there is an update available",
+      ),
+      ImageData(
+        imageSource:
+            "assets/images/projects/door-opener-app/error_screen_1.png",
+        description:
+            "This is the Screen which shows up if the encryption key is lost somewhere between the App and the Raspberry Pi",
+      ),
+      ImageData(
+          imageSource:
+              "assets/images/projects/door-opener-app/error_screen_2.png",
+          description:
+              "This is the Screen which shows up if the Raspberry PI you want to set up is used by someone else"),
+    ],
   ),
   Project(
       title: "Travel App",

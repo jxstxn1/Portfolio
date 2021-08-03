@@ -19,9 +19,11 @@ class HomeBanner extends StatelessWidget {
       child: Stack(
         fit: StackFit.expand,
         children: [
-          Image.asset(
-            "assets/images/bg.jpeg",
-            fit: BoxFit.cover,
+          Center(
+            child: Image.asset(
+              "assets/images/bg.jpeg",
+              fit: BoxFit.cover,
+            ),
           ),
           Container(
             color: darkColor.withOpacity(.66),

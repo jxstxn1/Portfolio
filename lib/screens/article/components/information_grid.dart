@@ -21,39 +21,41 @@ class InformationGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
-      physics: NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
-      itemCount: 3,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: crossAxisCount!,
-        crossAxisSpacing: defaultPadding,
-        mainAxisSpacing: defaultPadding / 2,
-        childAspectRatio: childAspectRatio!,
+    return Center(
+      child: GridView.builder(
+        physics: NeverScrollableScrollPhysics(),
+        shrinkWrap: true,
+        itemCount: 3,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: crossAxisCount!,
+          crossAxisSpacing: defaultPadding,
+          mainAxisSpacing: defaultPadding / 2,
+          childAspectRatio: childAspectRatio!,
+        ),
+        itemBuilder: (context, index) {
+          switch (index) {
+            case 0:
+              return InformationCard(
+                title: "Reason for beginning",
+                text: project!.startReason!,
+              );
+            case 1:
+              return InformationCard(
+                title: "Achievements",
+                achievements: project!.achievements!,
+                isAchievement: true,
+              );
+            case 2:
+              return InformationCard(
+                title: "Resume",
+                text: project!.resume!,
+              );
+            default:
+              return InformationCard(
+                  title: "Something went wrong", text: "An Error occured");
+          }
+        },
       ),
-      itemBuilder: (context, index) {
-        switch (index) {
-          case 0:
-            return InformationCard(
-              title: "Reason for beginning",
-              text: project!.startReason!,
-            );
-          case 1:
-            return InformationCard(
-              title: "Achievements",
-              achievements: project!.achievements!,
-              isAchievement: true,
-            );
-          case 2:
-            return InformationCard(
-              title: "Resume",
-              text: project!.resume!,
-            );
-          default:
-            return InformationCard(
-                title: "Something went wrong", text: "An Error occured");
-        }
-      },
     );
   }
 }
