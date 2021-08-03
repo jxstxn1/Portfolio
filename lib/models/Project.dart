@@ -3,7 +3,7 @@ import 'package:flutter_profile/models/image.dart';
 class Project {
   final String? title, description, startReason, resume, language;
   final List<String>? achievements;
-  final List<Image>? images;
+  final List<ImageData>? images;
 
   Project({
     this.title,
@@ -33,6 +33,7 @@ List<Project> demo_projects = [
     ],
     resume:
         "In the end the project was and is bigger than expected, but I learned so much during the main development process. I planned a complete rewrite of the app with all the stuff I learned in the past year",
+    images: [],
   ),
   Project(
     title: "Door Opener App",
@@ -51,23 +52,31 @@ List<Project> demo_projects = [
     ],
     resume:
         "In the End it was a very nice Project. We both learned so much about network communication and encryption. I learned a lot about User Friendly App Design",
+    images: [],
   ),
   Project(
-    title: "Travel App",
-    language: "Flutter",
-    description:
-        "A design challenge Project which I made with my friend ATS. Custom Animations and responsive User Interface.",
-    startReason:
-        "My friend ATS received a Flutter Challenge from Yash Jain to copy a given design in Flutter.",
-    achievements: [
-      "Design Practicing",
-      "Animation Practicing",
-      "Cooperative Work",
-      "Responsive User Interface"
-    ],
-    resume:
-        "In the end we made the App in less than a week. It was a lot of fun to make the app working.",
-  ),
+      title: "Travel App",
+      language: "Flutter",
+      description:
+          "A design challenge Project which I made with my friend ATS. Custom Animations and responsive User Interface.",
+      startReason:
+          "My friend ATS and I received a Flutter Challenge from Yash Jain to copy a given design in Flutter.",
+      achievements: [
+        "Design Practicing",
+        "Animation Practicing",
+        "Cooperative Work",
+        "Responsive User Interface"
+      ],
+      resume:
+          "In the end we made the App in less than a week. It was a lot of fun to make the app working.",
+      images: [
+        ImageData(
+            imageSource: "assets/images/projects/travel-app/startscreen.jpg",
+            description: "Here you can see the start screen of our Travel App"),
+        ImageData(
+            imageSource: "assets/images/projects/travel-app/homescreen.jpg",
+            description: "Here you can see the main screen of our Travel App"),
+      ]),
   Project(
     title: "Simple Blockchain",
     language: "NodeJS",
@@ -82,6 +91,7 @@ List<Project> demo_projects = [
     ],
     resume:
         "It was a very small project but I learned a lot about Blockchains.",
+    images: [],
   ),
   Project(
     title: "Github Webhook",
@@ -99,6 +109,7 @@ List<Project> demo_projects = [
     ],
     resume:
         "It was a small project but I learned something new about Webhooks. In the end it doesnt work like expected but it works that it can full fill his originaly given task.",
+    images: [],
   ),
   Project(
     title: "Kontra App Api",
@@ -117,5 +128,6 @@ List<Project> demo_projects = [
     ],
     resume:
         "It was a bigger project than expected and also my first NodeJS Project. But due this I learned so much. In the end we realised that Wordpress offers more or less an API, so we decided to rewrite the scrapper in the summer.",
+    images: [],
   ),
 ];

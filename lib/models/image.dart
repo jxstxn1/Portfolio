@@ -1,4 +1,4 @@
-class Image {
+class ImageData {
   final String? description, imageSource;
-  Image({this.description, this.imageSource});
+  ImageData({this.description, this.imageSource});
 }

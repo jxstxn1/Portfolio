@@ -24,18 +24,19 @@ class Recommendations extends StatelessWidget {
             height: defaultPadding,
           ),
           SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: List.generate(
-                  demo_recommendations.length,
-                  (index) => Padding(
-                    padding: const EdgeInsets.only(right: defaultPadding),
-                    child: RecommendationCard(
-                      recommendation: demo_recommendations[index],
-                    ),
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: List.generate(
+                demo_recommendations.length,
+                (index) => Padding(
+                  padding: const EdgeInsets.only(right: defaultPadding),
+                  child: RecommendationCard(
+                    recommendation: demo_recommendations[index],
                   ),
                 ),
-              ))
+              ),
+            ),
+          ),
         ],
       ),
     );

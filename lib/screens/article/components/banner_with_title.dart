@@ -26,7 +26,7 @@ class BannerWithTitle extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            "assets/images/${random.nextInt(5)}.jpg",
+            "assets/images/bg${random.nextInt(5)}.jpg",
             fit: BoxFit.cover,
           ),
           Container(

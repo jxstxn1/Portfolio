@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/models/Project.dart';
+import 'package:flutter_profile/screens/article/components/image_view_with_text.dart';
+import 'package:flutter_profile/screens/article/components/image_row.dart';
 import 'package:flutter_profile/screens/article/components/information_grid.dart';
 import 'package:flutter_profile/screens/home/home_screen.dart';
 
@@ -81,6 +83,9 @@ class _ArticleState extends State<Article> {
                     ),
                   ),
                 ),
+                widget.project!.images != null || widget.project!.images != []
+                    ? ImageRow(images: widget.project!.images)
+                    : Container(),
               ],
             ),
           ),
