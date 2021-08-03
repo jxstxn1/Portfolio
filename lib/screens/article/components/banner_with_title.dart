@@ -59,23 +59,25 @@ class BannerWithTitle extends StatelessWidget {
                             color: Colors.white,
                           ),
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    function();
-                  },
-                  style: TextButton.styleFrom(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: defaultPadding * 2,
-                        vertical: defaultPadding,
-                      ),
-                      backgroundColor: primaryColor),
-                  child: Text(
-                    "READ NOW!",
-                    style: TextStyle(
-                      color: darkColor,
-                    ),
-                  ),
-                ),
+                Responsive.isMobile(context)
+                    ? ElevatedButton(
+                        onPressed: () {
+                          function();
+                        },
+                        style: TextButton.styleFrom(
+                            padding: EdgeInsets.symmetric(
+                              horizontal: defaultPadding * 2,
+                              vertical: defaultPadding,
+                            ),
+                            backgroundColor: primaryColor),
+                        child: Text(
+                          "READ NOW!",
+                          style: TextStyle(
+                            color: darkColor,
+                          ),
+                        ),
+                      )
+                    : Container(),
               ],
             ),
           ),

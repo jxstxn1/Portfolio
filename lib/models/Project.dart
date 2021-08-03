@@ -2,7 +2,7 @@ import 'package:flutter_profile/models/image.dart';
 
 class Project {
   final String? title, description, startReason, resume, language;
-  final List<String>? achievments;
+  final List<String>? achievements;
   final List<Image>? images;
 
   Project({
@@ -10,7 +10,7 @@ class Project {
     this.language,
     this.description,
     this.startReason,
-    this.achievments,
+    this.achievements,
     this.resume,
     this.images,
   });
@@ -24,7 +24,7 @@ List<Project> demo_projects = [
         "My First big Flutter project. A news App with an custom API, Dark and Light Theme, Notifications, Favourites and Caching  Feature.",
     startReason:
         "I've got asked by my ex boss if its possible to make an app for our Blog. At this point I was just into basic Java Coding. So i tried it with different technologies, first with Java after that with Kotlin. But all this was not suitable for our small blog because we still need an IOS App and I am the only developer. So I went to Flutter and started learning it and stayed on Flutter.",
-    achievments: [
+    achievements: [
       "Connection with Custom API",
       "Notifications",
       "Light and Dark Theme",
@@ -41,7 +41,7 @@ List<Project> demo_projects = [
         "Big School project which I made with a class mate to open a electronic door with the app and an raspberry Pi. Connection works with a custom TCP Socket. One Time Passwords for one time access to a door and fully encrypted.",
     startReason:
         "In our Computer Science Lessons we had to do a Project. A classmate had the Idea to make a Opener for Electronic Doors, which can be opened with a Smartphone App.",
-    achievments: [
+    achievements: [
       "Custom TCP Server Connection",
       "Encryption",
       "AutoUpdater",
@@ -59,7 +59,7 @@ List<Project> demo_projects = [
         "A design challenge Project which I made with my friend ATS. Custom Animations and responsive User Interface.",
     startReason:
         "My friend ATS received a Flutter Challenge from Yash Jain to copy a given design in Flutter.",
-    achievments: [
+    achievements: [
       "Design Practicing",
       "Animation Practicing",
       "Cooperative Work",
@@ -75,7 +75,7 @@ List<Project> demo_projects = [
         "I made a very simple Blockchain in NodeJS to understand how Blockchains work. Proof-of-work and increasing Difficulty.",
     startReason:
         "I wanted to make a presentation in Economics about blockchains and to understand the principes and show something to the listeners i decided to make this little NodeJS Programm",
-    achievments: [
+    achievements: [
       "Understanding how Blockchains Work",
       "Proof-of-Work",
       "Increasing Difficulty"
@@ -90,7 +90,7 @@ List<Project> demo_projects = [
         "I made a Github Webhook Handler in NodeJS to get notified in Discord after someone did an Action on one of my projects.",
     startReason:
         "I was annoyed by watching all the time on Github to see if something happened on my important repos. So I watched",
-    achievments: [
+    achievements: [
       "Webhook Connection",
       "Discord API",
       "Error-Handling (more or less)",
@@ -107,7 +107,7 @@ List<Project> demo_projects = [
         "I made together with my Friend ScarVite an API to extract BlogPosts from the official Kontra Blog and save it in a MongoDB Database. The API send the Articles over to the App after a request and also notify the user after a new article is available.",
     startReason:
         "For the Kontra App we required an API, because the Kontra App is a Wordpress Page. So we made a Web Scrapper and an API.",
-    achievments: [
+    achievements: [
       "Firebase Messaging",
       "Read the Sitemap",
       "Scrap only new articles",
