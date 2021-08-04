@@ -20,7 +20,7 @@ class HomeBanner extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            "assets/images/bg.jpeg",
+            "assets/images/background.jpeg",
             fit: BoxFit.cover,
           ),
           Container(

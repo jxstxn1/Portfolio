@@ -172,7 +172,7 @@ List<Project> demo_projects = [
       "Scrap data from HTML file"
     ],
     resume:
-        "It was a bigger project than expected and also my first NodeJS Project. But due this I learned so much. In the end we realised that Wordpress offers more or less an API, so we decided to rewrite the scrapper in the summer.",
+        "It was a bigger project than expected and also my first NodeJS Project. But due to this I learned so much. In the end we realised that Wordpress offers more or less an API, so we decided to rewrite the scrapper in the summer.",
     images: [],
   ),
 ];

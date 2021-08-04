@@ -33,7 +33,7 @@ flutter:
     - assets/icons/linkedin.svg
     # all main images
     - assets/images/
-    - assets/images/bg.jpeg
+    - assets/images/background.jpeg
     - assets/images/bg0.jpg
     - assets/images/bg1.jpg
     - assets/images/bg2.jpg

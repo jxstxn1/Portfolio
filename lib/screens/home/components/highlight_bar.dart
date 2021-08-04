@@ -15,94 +15,88 @@ class HighLightBar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: defaultPadding),
       child: Responsive.isMobileLarge(context)
-          ? Padding(
-              padding: const EdgeInsets.only(right: defaultPadding / 2),
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      HighLight(
-                        counter: AnimatedCounter(
-                          percentage: 16,
-                          text: "+",
-                          waitingTime: 800,
-                        ),
-                        label: "Github Projects",
+          ? Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    HighLight(
+                      counter: AnimatedCounter(
+                        percentage: 16,
+                        text: "+",
+                        waitingTime: 800,
                       ),
-                      HighLight(
-                        counter: AnimatedCounter(
-                          percentage: 3,
-                          text: "+",
-                          waitingTime: 1000,
-                        ),
-                        label: "Years Experience",
+                      label: "Github Projects",
+                    ),
+                    HighLight(
+                      counter: AnimatedCounter(
+                        percentage: 3,
+                        text: "+",
+                        waitingTime: 1000,
                       ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      HighLight(
-                        counter: AnimatedCounter(
-                          percentage: 15,
-                          text: "+",
-                          waitingTime: 1200,
-                        ),
-                        label: "Stars",
+                      label: "Years Experience",
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    HighLight(
+                      counter: AnimatedCounter(
+                        percentage: 15,
+                        text: "+",
+                        waitingTime: 1200,
                       ),
-                      HighLight(
-                        counter: AnimatedCounter(
-                          percentage: 8,
-                          text: "+",
-                          waitingTime: 1400,
-                        ),
-                        label: "Cooperations",
+                      label: "Stars",
+                    ),
+                    HighLight(
+                      counter: AnimatedCounter(
+                        percentage: 8,
+                        text: "+",
+                        waitingTime: 1400,
                       ),
-                    ],
-                  )
-                ],
-              ),
+                      label: "Cooperations",
+                    ),
+                  ],
+                )
+              ],
             )
-          : Padding(
-              padding: const EdgeInsets.only(right: defaultPadding / 2),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  HighLight(
-                    counter: AnimatedCounter(
-                      percentage: 16,
-                      text: "+",
-                      waitingTime: 800,
-                    ),
-                    label: "Github Projects",
+          : Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                HighLight(
+                  counter: AnimatedCounter(
+                    percentage: 16,
+                    text: "+",
+                    waitingTime: 800,
                   ),
-                  HighLight(
-                    counter: AnimatedCounter(
-                      percentage: 3,
-                      text: "+",
-                      waitingTime: 1000,
-                    ),
-                    label: "Years Experience",
+                  label: "Github Projects",
+                ),
+                HighLight(
+                  counter: AnimatedCounter(
+                    percentage: 3,
+                    text: "+",
+                    waitingTime: 1000,
                   ),
-                  HighLight(
-                    counter: AnimatedCounter(
-                      percentage: 15,
-                      text: "+",
-                      waitingTime: 1200,
-                    ),
-                    label: "Stars",
+                  label: "Years Experience",
+                ),
+                HighLight(
+                  counter: AnimatedCounter(
+                    percentage: 15,
+                    text: "+",
+                    waitingTime: 1200,
                   ),
-                  HighLight(
-                    counter: AnimatedCounter(
-                      percentage: 8,
-                      text: "+",
-                      waitingTime: 1400,
-                    ),
-                    label: "Cooperations",
+                  label: "Stars",
+                ),
+                HighLight(
+                  counter: AnimatedCounter(
+                    percentage: 8,
+                    text: "+",
+                    waitingTime: 1400,
                   ),
-                ],
-              ),
+                  label: "Cooperations",
+                ),
+              ],
             ),
     );
   }

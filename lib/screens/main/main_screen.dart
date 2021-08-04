@@ -69,14 +69,16 @@ class _MainScreenState extends State<MainScreen> {
                       HomeBanner(
                         function: _scrolldown,
                       ),
-                      HighLightBar(),
                       Padding(
-                        padding: const EdgeInsets.only(right: defaultPadding),
-                        child: MyProjects(),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(right: defaultPadding),
-                        child: Recommendations(),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: defaultPadding),
+                        child: Column(
+                          children: [
+                            HighLightBar(),
+                            MyProjects(),
+                            Recommendations(),
+                          ],
+                        ),
                       ),
                     ],
                   ),
