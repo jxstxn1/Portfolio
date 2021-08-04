@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/constants.dart';
-import 'package:flutter_profile/screens/main/components/my_info.dart';
-import 'package:flutter_profile/screens/main/components/skills.dart';
+import 'package:justins_portfolio/constants.dart';
+import 'package:justins_portfolio/screens/main/components/my_info.dart';
+import 'package:justins_portfolio/screens/main/components/skills.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'area_info.dart';
 import 'coding.dart';

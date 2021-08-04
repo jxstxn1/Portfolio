@@ -1,9 +1,9 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/models/Project.dart';
-import 'package:flutter_profile/screens/article/components/information_card/back_side.dart';
-import 'package:flutter_profile/screens/article/components/information_card/front_side.dart';
+import 'package:justins_portfolio/models/Project.dart';
+import 'package:justins_portfolio/screens/article/components/information_card/back_side.dart';
+import 'package:justins_portfolio/screens/article/components/information_card/front_side.dart';
 
 class InformationCard extends StatefulWidget {
   const InformationCard(

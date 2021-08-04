@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/responsive.dart';
+import 'package:justins_portfolio/responsive.dart';
 
 import '../../../constants.dart';
 import 'animated_counter.dart';

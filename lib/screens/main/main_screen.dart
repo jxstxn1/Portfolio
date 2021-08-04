@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/constants.dart';
-import 'package:flutter_profile/responsive.dart';
-import 'package:flutter_profile/screens/home/components/highlight_bar.dart';
-import 'package:flutter_profile/screens/home/components/homebanner.dart';
-import 'package:flutter_profile/screens/home/components/my_projects.dart';
-import 'package:flutter_profile/screens/home/components/recommendation_bar.dart';
+import 'package:justins_portfolio/constants.dart';
+import 'package:justins_portfolio/responsive.dart';
+import 'package:justins_portfolio/screens/home/components/highlight_bar.dart';
+import 'package:justins_portfolio/screens/home/components/homebanner.dart';
+import 'package:justins_portfolio/screens/home/components/my_projects.dart';
+import 'package:justins_portfolio/screens/home/components/recommendation_bar.dart';
 
 import 'components/side_menu.dart';
 

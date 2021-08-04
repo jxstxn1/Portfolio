@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/constants.dart';
-import 'package:flutter_profile/screens/article/components/information_card/achievement_item.dart';
-import 'package:flutter_profile/screens/article/components/information_card/layout.dart';
+import 'package:justins_portfolio/constants.dart';
+import 'package:justins_portfolio/screens/article/components/information_card/achievement_item.dart';
+import 'package:justins_portfolio/screens/article/components/information_card/layout.dart';
 
 class BackSide extends StatelessWidget {
   const BackSide(

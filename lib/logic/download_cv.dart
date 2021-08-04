@@ -1,4 +1,4 @@
-import 'package:flutter_profile/links.dart';
+import 'package:justins_portfolio/links.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void downloadCV() async => await canLaunch(cv_link)

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/constants.dart';
-import 'package:flutter_profile/models/image.dart';
+import 'package:justins_portfolio/constants.dart';
+import 'package:justins_portfolio/models/image.dart';
 
 class ImageViewWithText extends StatelessWidget {
   const ImageViewWithText({Key? key, required this.image}) : super(key: key);

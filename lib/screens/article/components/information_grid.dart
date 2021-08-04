@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/models/Project.dart';
-import 'package:flutter_profile/screens/article/components/information_card.dart';
+import 'package:justins_portfolio/models/Project.dart';
+import 'package:justins_portfolio/screens/article/components/information_card.dart';
 
 import '../../../constants.dart';
 

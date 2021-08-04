@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/components/flutter_coded_text.dart';
-import 'package:flutter_profile/models/Project.dart';
+import 'package:justins_portfolio/components/flutter_coded_text.dart';
+import 'package:justins_portfolio/models/Project.dart';
 
 import '../../../constants.dart';
 import '../../../responsive.dart';

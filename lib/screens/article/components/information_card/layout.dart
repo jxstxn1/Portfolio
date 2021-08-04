@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/constants.dart';
+import 'package:justins_portfolio/constants.dart';
 
 class CardLayout extends StatelessWidget {
   const CardLayout({required Key? key, required this.child}) : super(key: key);

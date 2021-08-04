@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/constants.dart';
+import 'package:justins_portfolio/constants.dart';
 
 class AchievementItem extends StatelessWidget {
   const AchievementItem({Key? key, required this.achievement})

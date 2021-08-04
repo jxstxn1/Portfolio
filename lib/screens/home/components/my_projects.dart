@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/models/Project.dart';
-import 'package:flutter_profile/responsive.dart';
-import 'package:flutter_profile/screens/home/components/project_card.dart';
+import 'package:justins_portfolio/models/Project.dart';
+import 'package:justins_portfolio/responsive.dart';
+import 'package:justins_portfolio/screens/home/components/project_card.dart';
 
 import '../../../constants.dart';
 

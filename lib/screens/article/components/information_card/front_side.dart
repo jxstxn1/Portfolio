@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/constants.dart';
-import 'package:flutter_profile/responsive.dart';
-import 'package:flutter_profile/screens/article/components/information_card/layout.dart';
+import 'package:justins_portfolio/constants.dart';
+import 'package:justins_portfolio/responsive.dart';
+import 'package:justins_portfolio/screens/article/components/information_card/layout.dart';
 
 class FrontSide extends StatelessWidget {
   const FrontSide({Key? key, required this.title}) : super(key: key);

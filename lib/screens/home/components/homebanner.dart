@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/responsive.dart';
+import 'package:justins_portfolio/responsive.dart';
 
 import '../../../constants.dart';
 import 'i_build_animated_text.dart';
@@ -19,11 +19,9 @@ class HomeBanner extends StatelessWidget {
       child: Stack(
         fit: StackFit.expand,
         children: [
-          Center(
-            child: Image.asset(
-              "assets/images/bg.jpeg",
-              fit: BoxFit.cover,
-            ),
+          Image.asset(
+            "assets/images/bg.jpeg",
+            fit: BoxFit.cover,
           ),
           Container(
             color: darkColor.withOpacity(.66),

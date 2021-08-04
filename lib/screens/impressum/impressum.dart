@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/components/info_text.dart';
-import 'package:flutter_profile/constants.dart';
-import 'package:flutter_profile/responsive.dart';
+import 'package:justins_portfolio/components/info_text.dart';
+import 'package:justins_portfolio/constants.dart';
+import 'package:justins_portfolio/responsive.dart';
 
 class Impressum extends StatelessWidget {
   const Impressum({Key? key}) : super(key: key);

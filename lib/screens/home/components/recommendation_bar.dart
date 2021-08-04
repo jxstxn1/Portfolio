@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/models/Recommendation.dart';
-import 'package:flutter_profile/screens/home/components/recommendation_card.dart';
+import 'package:justins_portfolio/models/Recommendation.dart';
+import 'package:justins_portfolio/screens/home/components/recommendation_card.dart';
 
 import '../../../constants.dart';
 

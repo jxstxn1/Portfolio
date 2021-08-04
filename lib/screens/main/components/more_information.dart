@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/logic/download_cv.dart';
-import 'package:flutter_profile/logic/openInNewTab.dart';
-import 'package:flutter_profile/screens/impressum/impressum.dart';
+import 'package:justins_portfolio/logic/download_cv.dart';
+import 'package:justins_portfolio/logic/openInNewTab.dart';
+import 'package:justins_portfolio/screens/impressum/impressum.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../constants.dart';

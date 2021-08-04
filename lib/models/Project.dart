@@ -1,4 +1,4 @@
-import 'package:flutter_profile/models/image.dart';
+import 'package:justins_portfolio/models/image.dart';
 
 class Project {
   final String? title, description, startReason, resume, language;

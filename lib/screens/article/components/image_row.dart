@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile/models/image.dart';
-import 'package:flutter_profile/screens/article/components/image_view_with_text.dart';
+import 'package:justins_portfolio/models/image.dart';
+import 'package:justins_portfolio/screens/article/components/image_view_with_text.dart';
 
 import '../../../constants.dart';
 
