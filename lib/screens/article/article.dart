@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:justins_portfolio/models/Project.dart';
+import 'package:justins_portfolio/models/image.dart';
 import 'package:justins_portfolio/screens/article/components/image_view_with_text.dart';
 import 'package:justins_portfolio/screens/article/components/image_row.dart';
 import 'package:justins_portfolio/screens/article/components/information_grid.dart';
@@ -20,6 +21,15 @@ class Article extends StatefulWidget {
 
 class _ArticleState extends State<Article> {
   ScrollController _scrollController = ScrollController();
+  late List<ImageData> imageData;
+
+  @override
+  void initState() {
+    print(widget.project!.images!.toString());
+    imageData = widget.project!.images!;
+    print(imageData.isEmpty);
+    super.initState();
+  }
 
   @override
   void dispose() {
@@ -83,9 +93,7 @@ class _ArticleState extends State<Article> {
                     ),
                   ),
                 ),
-                widget.project!.images != null || widget.project!.images != []
-                    ? ImageRow(images: widget.project!.images)
-                    : Container(),
+                if (imageData.isNotEmpty) ImageRow(images: imageData)
               ],
             ),
           ),
