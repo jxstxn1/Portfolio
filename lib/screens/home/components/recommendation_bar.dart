@@ -3,6 +3,7 @@ import 'package:justins_portfolio/models/Recommendation.dart';
 import 'package:justins_portfolio/screens/home/components/recommendation_card.dart';
 
 import '../../../constants.dart';
+import '../../../responsive.dart';
 
 class Recommendations extends StatelessWidget {
   const Recommendations({
@@ -23,6 +24,11 @@ class Recommendations extends StatelessWidget {
           SizedBox(
             height: defaultPadding,
           ),
+          if (Responsive.isMobile(context))
+            Text(
+              "You can scroll me horizontal :)",
+              style: TextStyle(height: 1.5),
+            ),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(

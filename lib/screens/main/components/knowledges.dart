@@ -43,10 +43,14 @@ class KnowledgeText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: defaultPadding / 2),
+      padding: const EdgeInsets.only(
+          bottom: defaultPadding / 2, right: defaultPadding / 8),
       child: Row(
         children: [
-          SvgPicture.asset("assets/icons/check.svg"),
+          SvgPicture.asset(
+            "assets/icons/check.svg",
+            color: primaryColor,
+          ),
           SizedBox(width: defaultPadding / 2),
           Text(text!),
         ],
