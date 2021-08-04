@@ -56,6 +56,6 @@ flutter:
     - assets/images/projects/kontra-app/search_screen.png
     # Travel App Images
     - assets/images/projects/travel-app/
-    - assets/images/projects/travel-app/homescreen.png
-    - assets/images/projects/kontra-app/startscreen.png
+    - assets/images/projects/travel-app/homescreen.jpg
+    - assets/images/projects/travel-app/startscreen.jpg
     

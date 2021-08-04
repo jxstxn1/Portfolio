@@ -55,9 +55,10 @@ class _MainScreenState extends State<MainScreen> {
                   flex: 2,
                   child: SideMenu(),
                 ),
-              SizedBox(
-                width: defaultPadding,
-              ),
+              if (Responsive.isDesktop(context))
+                SizedBox(
+                  width: defaultPadding,
+                ),
               Expanded(
                 flex: 7,
                 child: SingleChildScrollView(
