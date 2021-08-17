@@ -22,11 +22,11 @@ class InfoText extends StatelessWidget {
             ? MainAxisAlignment.center
             : MainAxisAlignment.spaceBetween,
         children: [
-          Text(
+          SelectableText(
             title!,
             style: TextStyle(color: Colors.white),
           ),
-          Text(text!)
+          SelectableText(text!)
         ],
       ),
     );

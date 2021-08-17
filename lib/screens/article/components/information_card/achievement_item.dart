@@ -12,7 +12,7 @@ class AchievementItem extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Text(
+        SelectableText(
           "•",
           style: Theme.of(context)
               .textTheme
@@ -20,7 +20,7 @@ class AchievementItem extends StatelessWidget {
               .copyWith(color: primaryColor),
         ),
         SizedBox(width: defaultPadding / 2),
-        Text(
+        SelectableText(
           achievement!,
           style: Theme.of(context)
               .textTheme

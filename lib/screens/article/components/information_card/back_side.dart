@@ -27,7 +27,7 @@ class BackSide extends StatelessWidget {
             : SingleChildScrollView(
                 child: Container(
                   child: Center(
-                    child: Text(
+                    child: SelectableText(
                       text!,
                       textAlign: TextAlign.left,
                       style: Theme.of(context)
