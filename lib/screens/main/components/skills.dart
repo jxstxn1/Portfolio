@@ -24,7 +24,7 @@ class Skills extends StatelessWidget {
         Row(
           children: [
             AnimatedCircularProgressIndicator(
-              percentage: 0.78,
+              percentage: 0.91,
               skill: "Flutter",
               waitingTime: 200,
             ),
